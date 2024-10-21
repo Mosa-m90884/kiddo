@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+
+    <ImageButton
+        android:id="@+id/QbuttonBack"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="11dp"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/back_dark" />
+    <!-- TextView لعرض نص "قراءة القرآن" -->
+    <TextView
+        android:id="@+id/textReadQuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=" قراءة القرآن الكريم"
+        android:textSize="24sp"
+        android:gravity="center"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_below="@id/QbuttonBack"
+        android:layout_marginTop="16dp" />
+
+    <!-- Spinner لاختيار السورة -->
+    <Spinner
+        android:id="@+id/spinnerSurah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textReadQuran"
+        android:layout_marginTop="16dp" />
+    <!-- ScrollView لتمكين التمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonOpenQuran"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <!-- عنصر نص لعرض نص القرآن -->
+        <TextView
+            android:id="@+id/textQuran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+
+            android:padding="8dp"
+            android:background="@color/background" />
+    </ScrollView>
+
+    <!-- زر لفتح نص القرآن -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOpenQuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:text=" إقرأ سورة من القرآن الكريم"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinnerSurah"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

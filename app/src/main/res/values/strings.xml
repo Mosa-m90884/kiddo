@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Kiddo</string>
+    <string name="sign_in_splash">إنشاء حساب جديد</string>
+    <string name="log_in_splash">تسجيل الدخول</string>
+    <string name="reset">  تصفير النقاط وتقييم الطفل</string>
+
+    <string name="welcome">مرحبا</string>
+    <string name="create_account">أنشأ حسابك</string>
+    <string name="enter_user_name">اسم المستخدم</string>
+    <string name="enter_email">البريد الالكتروني</string>
+    <string name="enter_parent_email"> البريد الالكتروني للأب</string>
+
+    <string name="enter_password">كلمة المرور</string>
+    <string name="confirm_password">اعد كلمة المرور</string>
+    <string name="password">كلمة المرور</string>
+    <string name="child">طفل</string>
+    <string name="parent">اب</string>
+    <string name="dont_match">The confirm password does not match password</string>
+    <string name="empty">This field does not be empty</string>
+    <string name="dont_right">Please enter right value</string>
+    <string name="login_now">سجل الدخول الان</string>
+    <string name="forget_password">هل نسيت كلمة المرور</string>
+    <string name="email_box">Check your email box</string>
+    <string name="error_response">We could not find any data within the account. Please contact the admin to resolve this issue.</string>
+    <string name="have">You have</string>
+    <string name="point">point</string>
+    <string name="bed_arrangement">ترتيب السرير</string>
+
+    <string name="task1">ترتيب السرير</string>
+    <string name="task2">قراءة القرآن الكريم</string>
+    <string name="task3">قراءة الحديث النبوي الشريف</string>
+    <string name="task4">ترتيب الدولاب</string>
+    <string name="task5">تسجيل الخروج</string>
+    <string name="save">حفظ</string>
+
+    <string name="supervision">مراقبة تقدم طفلي</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="share">مشاركة</string>
+
+</resources>

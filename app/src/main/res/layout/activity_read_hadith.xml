@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+    <ImageButton
+        android:id="@+id/HbuttonBack"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="11dp"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/back_dark" />
+    <!-- TextView لعرض نص "قراءة الحديث الشريف" -->
+    <TextView
+        android:id="@+id/textReadHadith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قراءة الحديث الشريف"
+android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/HbuttonBack"
+        android:layout_marginTop="16dp" />
+
+    <!-- زر لفتح حديث معين -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOpenHadith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:text=" إقرأ الحديث الشريف"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textReadHadith"
+        android:layout_marginTop="16dp" />
+    <!-- ScrollView لتمكين التمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonOpenHadith"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <!-- عنصر نص لعرض نص الحديث -->
+        <TextView
+            android:id="@+id/textHadith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray" />
+    </ScrollView>
+</RelativeLayout>

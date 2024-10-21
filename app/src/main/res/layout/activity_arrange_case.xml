@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+
+
+    <!-- TextView لعرض نص "صورة السرير بعد ترتيبه" -->
+
+    <!-- عنصر صورة لعرض الصورة الملتقطة -->
+
+    <!-- زر لفتح الكاميرا -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/caseBack"
+            android:layout_width="82dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="11dp"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/back_dark" />
+
+        <TextView
+            android:id="@+id/textCaseArranged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="صوّر الدولاب بعد ترتيبه"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageCase"
+            android:layout_width="395dp"
+            android:layout_height="338dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/case2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/caseOpenCamera"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:text="فتح الكاميرا"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
